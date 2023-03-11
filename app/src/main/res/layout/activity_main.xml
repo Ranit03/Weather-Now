@@ -142,7 +142,7 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/weatherimg"
+                        android:id="@+id/weather"
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_gravity="center"
@@ -204,7 +204,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/pressure"
+                                    android:id="@+id/sunrise"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -215,7 +215,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/pressuretext"
+                                    android:id="@+id/sunrisetext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="5:30am"
@@ -248,7 +248,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/pressure"
+                                    android:id="@+id/sunset"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -259,7 +259,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/pressuretext"
+                                    android:id="@+id/sunsettext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="5:30pm"
@@ -292,7 +292,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/humidity"
+                                    android:id="@+id/wind"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -301,7 +301,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/humiditytext"
+                                    android:id="@+id/windtext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="100"
@@ -341,7 +341,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/tempinf"
+                                    android:id="@+id/pressure"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -350,7 +350,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/tempinftext"
+                                    android:id="@+id/pressuretext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="1 atm"
@@ -372,7 +372,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/tempinflayout"
+                                android:id="@+id/humiditylayout"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -380,7 +380,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/tempinf"
+                                    android:id="@+id/humidity"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -389,7 +389,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/tempinftext"
+                                    android:id="@+id/humiditytext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="100"
@@ -419,7 +419,7 @@
                                 android:gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/wind"
+                                    android:id="@+id/info"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_margin="2dp"
@@ -428,7 +428,7 @@
                                 </ImageView>
 
                                 <TextView
-                                    android:id="@+id/windtext"
+                                    android:id="@+id/infotext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Created By"
