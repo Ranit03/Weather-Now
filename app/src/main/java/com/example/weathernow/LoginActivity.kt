@@ -3,9 +3,8 @@ package com.example.weathernow
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
-import android.widget.TextView
 import android.widget.Toast
+import com.example.weathernow.Activities.MainActivity
 import com.example.weathernow.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -19,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
       setContentView(binding.root)
 
       firebaseAuth = FirebaseAuth.getInstance()
-      binding.textViewRegister.setOnClickListener{
+      binding.textView5.setOnClickListener{
          val intent = Intent(this, RegisterActivity::class.java)
          startActivity(intent)
       }

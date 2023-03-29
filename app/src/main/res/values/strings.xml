@@ -17,7 +17,25 @@
     <string name="weather_type">Drizzle</string>
     <string name="sunrise">Sunrise</string>
     <string name="sunset">Sunset</string>
-
+    <string name="LOGIN">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account_register_now">No Account ! Register Now !</string>
+    <string name="register">Register</string>
+    <string name="now">Now</string>
+    <string name="email_register">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_an_account_login_now">Have An Account, Login Now</string>
+    <string name="search_location">Search Location</string>
+    <string name="date_and_time">Time</string>
+    <string name="min_temp_acitivity">Min temp</string>
+    <string name="max_temp_activity">Max temp</string>
+    <string name="_22_c">22°C</string>
+    <string name="feels_like">Feels like</string>
+    <string name="weather_now">Weather Now</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="Location">Location</string>
 
 
 </resources>
