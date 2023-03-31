@@ -14,6 +14,7 @@ import android.provider.Settings
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
@@ -23,9 +24,13 @@ import androidx.databinding.DataBindingUtil
 import com.example.weathernow.Models.WeatherModel
 import com.example.weathernow.R
 import com.example.weathernow.Utilities.ApiUtilities
+import com.example.weathernow.databinding.ActivityLoginBinding
+import com.example.weathernow.databinding.ActivityLogoutBinding
 import com.example.weathernow.databinding.ActivityMainBinding
+import com.example.weathernow.logout
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -48,6 +53,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         fusedLocationProvider = LocationServices.getFusedLocationProviderClient(this)
@@ -74,6 +83,12 @@ class MainActivity : AppCompatActivity() {
         binding.currentLocation.setOnClickListener {
             getCurrentLocation()
         }
+        var logOut = findViewById<Button>(R.id.Logout)
+        logOut.setOnClickListener {
+            val intent = Intent(this, logout::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
@@ -385,6 +400,8 @@ class MainActivity : AppCompatActivity() {
         intTemp = intTemp.minus(273)
         return intTemp.toBigDecimal().setScale(1, RoundingMode.UP).toDouble()
     }
+
+
 
 
 }

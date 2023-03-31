@@ -94,7 +94,7 @@
                         android:id="@+id/mintemp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="150dp"
+                        android:layout_marginEnd="115dp"
                         android:text="@string/min_temp_acitivity"
                         android:textColor="@color/white">
 
@@ -183,6 +183,8 @@
 
 
                     </LinearLayout>
+
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -617,13 +619,35 @@
 
                         </LinearLayout>
 
+
                     </androidx.cardview.widget.CardView>
+
+
+
+
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/Logout"
+                android:layout_width="52dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:background="@drawable/round_button"
+                android:text="[->"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="6dp" />
+
+
+
+
+
+
 
         </FrameLayout>
 

@@ -14,13 +14,10 @@ class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        val backgrounding : TextView = findViewById(R.id.textView3)
-        val sideAnimation = AnimationUtils.loadAnimation(this,R.anim.slide)
-        backgrounding.startAnimation(sideAnimation)
-
-        Handler().postDelayed({
-            startActivity(Intent(this,LoginActivity::class.java))
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent=Intent(this,LoginActivity::class.java)
+            startActivity(intent)
             finish()
-        },3000)
+        },  3000)
     }
 }
